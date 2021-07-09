@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+nav{
+  background: #222222;
+  padding: 10px 40px 10px 70px;
+  border: 1px solid #000;
+  border-left: none;
+  border-right: none;
+
+}
+footer{
+  background: #222222;
+
+  max-width:90rem;
+  border-left: none;
+  border-right: none;
+  overflow:visible;
+}
+
+.div1 a{
+  border:1px solid gray;
+  border:transparent;
+
+}
+
+footer nav p{
+  color:white;
+}
+
+section .products p{
+  color:red;
+}
+
+.grid .grid-elements a{
+  display: grid;
+
+}
+
+nav ul{
+  display: inline;
+  margin-left: 100px;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+nav ul div.items{
+  padding: 0 25px;
+  display: inline-flex;
+
+}
+nav ul div.items a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+  color:white;
+}
+nav ul div.items a:hover{
+  color: cyan;
+}
+nav ul .search-icon{
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+nav ul .items.loginform{
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+nav ul .search-icon input{
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
+nav ul .search-icon .icon{
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+nav ul .search-icon .icon:hover{
+  background: #e6e6e6;
+}
+nav ul .search-icon .icon span{
+  color: #222222;
+  font-size: 18px;
+}
+nav ul li.btn{
+  font-size: 29px;
+  flex: 1;
+  padding: 0 40px;
+  display: none;
+}
+nav ul li.btn span{
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav ul li.btn span.show:before{
+  content: '\f00d';
+}
+
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 40px;
+  z-index: -2;
+}
+.content .text{
+  font-size: 40px;
+  font-weight: 800;
+  padding: 5px 0;
+  color: #202020;
+}
+.content .p{
+  font-size: 28px;
+  font-weight: 600;
+  color: #202020;
+}
+
+@media screen and (max-width: 600px) {
+
+  nav ul .items {
+    clear: both;
+    flex-wrap: wrap;
+  }
+
+  nav ul .items li {
+    padding: 30px;
+  }
+
+  nav {
+    clear: both;
+  }
+
+}
+
+
+@media screen and(max-width: 1000px) {
+  nav ul .items {
+    clear: both;
+    flex-wrap: wrap;
+  }
+  nav ul .items li {
+    padding: 30px;
+  }
+
+  nav {
+    clear: both;
+  }
+
+}
